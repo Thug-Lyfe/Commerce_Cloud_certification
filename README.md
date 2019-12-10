@@ -33,8 +33,8 @@
   1. Content assets contain meta data and/or html
   2. Content slots contain, Configurations, Content Assets, Meta data and/or html
   3. Page designer, is a custimizable template sites, that can give the customer a visual tool to design web pages.
-    - The Developer makes the templates from business requirements.
-    - The Customer creates pages from the templates.
+      - The Developer makes the templates from business requirements.
+      - The Customer creates pages from the templates.
   4. Content Folders contain all Content Assets, Pages, Content Slots. They can be shared accross sites.
 
 
