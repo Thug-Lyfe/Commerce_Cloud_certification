@@ -2,17 +2,40 @@
 
 
 ## B2C Commerce Setup: 11%
-Given a sandbox environment, configure an IDE to use WebDAV to deploy cartridges to the correct version directories.
-Given a sandbox instance and data import files, import files using the Business Manager Import/Export modules.
-Given the code for a storefront site, add the correct sequence of cartridge names to the provided cartridge path.
-Given a sandbox environment, use the Business Manager to add a new site to the instance, configuring the default currency and taxation type according to business requirements.
-Given a recently created B2C site, assign the storefront data configurations according to business requirements. 
-
+- Given a sandbox environment, configure an IDE to use WebDAV to deploy cartridges to the correct version directories.
+  1. File > New > Digital Server Connection + set Staging Directory in wizard.
+  2. Digital Server Connection > Properties > Project References.
+- Given a sandbox instance and data import files, import files using the Business Manager Import/Export modules.
+  1. Import & Export
+  2. Upload File
+  3. Import File
+- Given the code for a storefront site, add the correct sequence of cartridge names to the provided cartridge path.
+  1. Custom Core / Pipelines / Controllers Catridge / CSsuite
+  2. Default Site genesis Cartridges (controllers, pipelines, core) (controllers overwrite duplicate pipeline names regardless of placement)
+  3. Others
+- Given a sandbox environment, use the Business Manager to add a new site to the instance, configuring the default currency and taxation type according to business requirements.
+  1. Administration > Sites > Manage Sites > New Site > General
+  2. Set currency and taxation.
+  3. Both can be changed later (and more currencies can be added)
+- Given a recently created B2C site, assign the storefront data configurations according to business requirements. 
+  1. Multi, single locale sites
+  2. Single, multi locale site
+  3. A mix.
+  4. Configurations therein???
 
 ## Work With a B2C Site: 12%
 - Given a Business Manager task, work with the product data model to manage products and product search model, their categorization, and associated inventory and pricebooks.
+  1. [Class ProductSearchModel](https://documentation.b2c.commercecloud.salesforce.com/DOC2/topic/com.demandware.dochelp/DWAPI/scriptapi/html/api/class_dw_catalog_ProductSearchModel.html?resultof=%22%70%72%6f%64%75%63%74%22%20%22%73%65%61%72%63%68%22%20%22%6d%6f%64%65%6c%22%20) 
 - Given a configuration for tasks, such as payment and shipping information, use Business Manager to complete storefront orders.
+  1. Merchant Tools > Ordering > orders > open an order
+  2. Change Confirmation Status > Confirmed.
 - Given a configuration task, use Business Manager to work with Content Assets, Page Designer, Content Slots, and Content Folders.
+  1. Content assets contain meta data and/or html
+  2. Content slots contain, Configurations, Content Assets, Meta data and/or html
+  3. Page designer, is a custimizable template sites, that can give the customer a visual tool to design web pages.
+    - The Developer makes the templates from business requirements.
+    - The Customer creates pages from the templates.
+  4. Content Folders contain all Content Assets, Pages, Content Slots. They can be shared accross sites.
 
 
 ## Data Management Using Business Manager Usage: 24%
