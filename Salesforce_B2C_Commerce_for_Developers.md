@@ -1,4 +1,4 @@
-# Trailhead Learning Objectives 1.
+# Salesforce B2C Commerce for Developers.
 
 [Trailhead ExamGuide](https://trailhead.salesforce.com/help?article=Salesforce-Certified-B2C-Commerce-Developer-Exam-Guide)
 
