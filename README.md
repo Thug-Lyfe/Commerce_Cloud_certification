@@ -1,7 +1,8 @@
 # Commerce_Cloud_certification
 
+[Trailhead ExamGuide](https://trailhead.salesforce.com/help?article=Salesforce-Certified-B2C-Commerce-Developer-Exam-Guide) 
 
-## B2C Commerce Setup: 11%
+### B2C Commerce Setup: 11%
 - Given a sandbox environment, configure an IDE to use WebDAV to deploy cartridges to the correct version directories.
   1. File > New > Digital Server Connection + set Staging Directory in wizard.
   2. Digital Server Connection > Properties > Project References.
@@ -23,7 +24,7 @@
   3. A mix.
   4. Configurations therein???
 
-## Work With a B2C Site: 12%
+### Work With a B2C Site: 12%
 - Given a Business Manager task, work with the product data model to manage products and product search model, their categorization, and associated inventory and pricebooks.
   1. [Class ProductSearchModel](https://documentation.b2c.commercecloud.salesforce.com/DOC2/topic/com.demandware.dochelp/DWAPI/scriptapi/html/api/class_dw_catalog_ProductSearchModel.html?resultof=%22%70%72%6f%64%75%63%74%22%20%22%73%65%61%72%63%68%22%20%22%6d%6f%64%65%6c%22%20) 
 - Given a configuration for tasks, such as payment and shipping information, use Business Manager to complete storefront orders.
@@ -38,7 +39,7 @@
   4. Content Folders contain all Content Assets, Pages, Content Slots. They can be shared accross sites.
 
 
-## Data Management Using Business Manager Usage: 24%
+### Data Management Using Business Manager Usage: 24%
 - Given a business requirement, modify site search preferences and settings to enable searching for a specified term or product attribute.
 - Given a business requirement, create and configure a new search refinement and sorting definition that can be used on the storefront.
 - Given a debugging requirement or code, configure the logging categories and access the logs in Business Manager.
@@ -49,7 +50,7 @@
 - Given a service configuration, recognize how they are applicable to the development process.
 
 
-## Application Development: 53%
+### Application Development: 53%
 - Given a development task, code ISML templates that use functionality such as: local include, remote include, components, and other ISML tags.
 - Use debugging best practices and techniques to troubleshoot scripts and controllers and verify outcomes.
 - Given a requirement, create and extend the functionality of a JavaScript controller that leverages models, decorators, factories, or helpers following API best practices and renders a template or returns a JSON response.
@@ -62,3 +63,8 @@
 - Given code that violates documented best practices, identify the issues and modify the code to conform with best practices including performance and scalability.
 - Given a business requirement, use OCAPI Shop and Data APIs to enable interoperability with an external system.
 - Given a business requirement to perform a scheduled task, develop jobs and code job scripts.
+
+
+
+
+
