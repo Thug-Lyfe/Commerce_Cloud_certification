@@ -1,7 +1,9 @@
 # Trailhead Learning Objectives 1.
 
-[Trailhead ExamGuide](https://trailhead.salesforce.com/help?article=Salesforce-Certified-B2C-Commerce-Developer-Exam-Guide) 
+[Trailhead ExamGuide](https://trailhead.salesforce.com/help?article=Salesforce-Certified-B2C-Commerce-Developer-Exam-Guide)
+
 [Trailhead Trailmix](https://trailhead.salesforce.com/en/content/learn/trails/develop-for-commerce-cloud?trailmix_creator_id=strailhead&trail)
+
 [Trailhead Badge](https://trailhead.salesforce.com/en/content/learn/modules/cc-digital-for-developers?trail_id=develop-for-commerce-cloud)
 
 ## Get Started with Commerce Cloud Business Manager
