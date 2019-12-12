@@ -70,17 +70,22 @@
 - Explain what a page type’s render function does.
   - It calls an ISML template, runs all demandware scripts and other scripts therin, to generate a HTML markup, which is then rendered for the user.
 - List four Page Designer CSS development standards.
-  - put the html wrapper in a div '(<div id="wrapper"></div>)'
+  - put the html wrapper in a div (\<div id="wrapper"\>\</div\>)
   - The default CSS class for regions: "experience-region experience-<region_definition_id>"
   - The dafault CSS Class for components: "experience-component experience-<componenttype_id>"
   - The compoent type ID is with dots (.), the classname is with lines (-).
 - Explain how you can vary a component’s style based on the region it’s in.
   - get the component, change the look/style, render the component.
+    1. new dw.experience.RegionRenderSettings(); -> setDefaultComponentRenderSettings()
+    2. new dw.experience.ComponentRenderSettings(); -> setComponentRenderSettings()
+    3. setTagName(), setAttributes() osv.
+    3. return dw.experience.PageMgr.renderRegion(component,RenderSettings); 
   
 
 ## Create a Custom Attribute Editor
 
 - Explain why you would create a custom attribute editor.
+  - 
 - Explain how the HTML iframe works with a custom attribute editor.
 - Explain the difference between a breakout custom attribute editor and a trigger custom attribute editor.
 - Explain why you would use a breakout custom attribute editor.
