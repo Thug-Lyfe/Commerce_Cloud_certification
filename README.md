@@ -27,10 +27,10 @@
 ### Work With a B2C Site: 12%
 - Given a Business Manager task, work with the product data model to manage products and product search model, their categorization, and associated inventory and pricebooks.
   1. [Class ProductSearchModel](https://documentation.b2c.commercecloud.salesforce.com/DOC2/topic/com.demandware.dochelp/DWAPI/scriptapi/html/api/class_dw_catalog_ProductSearchModel.html?resultof=%22%70%72%6f%64%75%63%74%22%20%22%73%65%61%72%63%68%22%20%22%6d%6f%64%65%6c%22%20) 
-- Given a configuration for tasks, such as payment and shipping information, use Business Manager to complete storefront orders.
+- Marco - Given a configuration for tasks, such as payment and shipping information, use Business Manager to complete storefront orders.
   1. Merchant Tools > Ordering > orders > open an order
   2. Change Confirmation Status > Confirmed.
-- Given a configuration task, use Business Manager to work with Content Assets, Page Designer, Content Slots, and Content Folders.
+- Marco - Given a configuration task, use Business Manager to work with Content Assets, Page Designer, Content Slots, and Content Folders.
   1. Content assets contain meta data and/or html
   2. Content slots contain, Configurations, Content Assets, Meta data and/or html
   3. Page designer, is a custimizable template sites, that can give the customer a visual tool to design web pages.
@@ -40,9 +40,9 @@
 
 
 ### Data Management Using Business Manager Usage: 24%
-- Given a business requirement, modify site search preferences and settings to enable searching for a specified term or product attribute.
+- MARCO - Given a business requirement, modify site search preferences and settings to enable searching for a specified term or product attribute.
 - Given a business requirement, create and configure a new search refinement and sorting definition that can be used on the storefront.
-- Given a debugging requirement or code, configure the logging categories and access the logs in Business Manager.
+- Marco - Given a debugging requirement or code, configure the logging categories and access the logs in Business Manager.
 - Given business requirements, extend the storefront to expose a new attribute on an existing system object type.
 - Given a business need to store custom data, determine if a custom object is needed and create and configure as required.
 - Given a performance issue and data, use relevant tools to inspect code performance and determine and implement solutions (cache configuration, profilers, etc) to improve performance.
@@ -51,15 +51,15 @@
 
 
 ### Application Development: 53%
-- Given a development task, code ISML templates that use functionality such as: local include, remote include, components, and other ISML tags.
-- Use debugging best practices and techniques to troubleshoot scripts and controllers and verify outcomes.
+- Marco - Given a development task, code ISML templates that use functionality such as: local include, remote include, components, and other ISML tags.
+- Marco - Use debugging best practices and techniques to troubleshoot scripts and controllers and verify outcomes.
 - Given a requirement, create and extend the functionality of a JavaScript controller that leverages models, decorators, factories, or helpers following API best practices and renders a template or returns a JSON response.
-- Given a business requirement and design for a new marketing page, develop page types and components to allow a marketer to build a page with the Page Designer tool.
+- Marco - Given a business requirement and design for a new marketing page, develop page types and components to allow a marketer to build a page with the Page Designer tool.
 - Given a requirement to accept, validate, and persist information from a storefront customer, modify the appearance of a form, add validation and CSRF protection, and use bindings to process fields.
-- Given localization requirements, implement and enhance templates, form definitions, static files, properties files, and persistent object attributes to ensure that pages are displayed in the expected language.
-- Given a logging task and existing configuration, write code that logs non-sensitive data to custom log files with different log levels.
-- Integrate, deploy, and use a service instance based on a given requirement.
-- Given a use case, extend functionality or capture an event using hook extension points.
+- Marco - Given localization requirements, implement and enhance templates, form definitions, static files, properties files, and persistent object attributes to ensure that pages are displayed in the expected language.
+- Marco - Given a logging task and existing configuration, write code that logs non-sensitive data to custom log files with different log levels.
+- Marco - Integrate, deploy, and use a service instance based on a given requirement.
+- Marco - Given a use case, extend functionality or capture an event using hook extension points.
 - Given code that violates documented best practices, identify the issues and modify the code to conform with best practices including performance and scalability.
 - Given a business requirement, use OCAPI Shop and Data APIs to enable interoperability with an external system.
 - Given a business requirement to perform a scheduled task, develop jobs and code job scripts.
