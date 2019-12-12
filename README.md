@@ -43,7 +43,7 @@
   1. Content assets contain meta data and/or html
   2. Content slots contain, Configurations, Content Assets, Meta data and/or html
   3. Content Folders contain all Content Assets, Pages, Content Slots. They can be shared accross sites.
-  4. Page designer, is a custimizable template sites, that can give the customer a visual tool to design web pages. (it looks and feels a lot like sitecore)
+  4. Page designer, is a custimizable template sites, that can give the customer a visual tool to design web pages. (it looks and feels a lot like sitecore, 95% the same)
       - The Developer makes the templates and components from business requirements.
         - a page is made up of regions,
         - a region is made up of components
@@ -64,8 +64,12 @@ page designer links : [1](https://trailhead.salesforce.com/en/content/learn/modu
 
 ### Data Management Using Business Manager Usage: 24%
 - MARCO - Given a business requirement, modify site search preferences and settings to enable searching for a specified term or product attribute.
+  - Terms: Merchant Tools > Search > Search Driven Redirects, choose what terms go to where.
+  - Merchant Tools > Search > Searchable Attributes, choose which attributes are searchable.
 - Given a business requirement, create and configure a new search refinement and sorting definition that can be used on the storefront.
 - Marco - Given a debugging requirement or code, configure the logging categories and access the logs in Business Manager.
+  - Administration > Operations > Custom Log Settings
+  - https://some-demandware.net/on/demandware.servlet/webdav/Sites/Impex/customLogs , this is where custom logs will be created.
 - Given business requirements, extend the storefront to expose a new attribute on an existing system object type.
 - Given a business need to store custom data, determine if a custom object is needed and create and configure as required.
 - Given a performance issue and data, use relevant tools to inspect code performance and determine and implement solutions (cache configuration, profilers, etc) to improve performance.
@@ -81,8 +85,8 @@ page designer links : [1](https://trailhead.salesforce.com/en/content/learn/modu
 - Given a requirement to accept, validate, and persist information from a storefront customer, modify the appearance of a form, add validation and CSRF protection, and use bindings to process fields.
 - Marco - Given localization requirements, implement and enhance templates, form definitions, static files, properties files, and persistent object attributes to ensure that pages are displayed in the expected language.
 - Marco - Given a logging task and existing configuration, write code that logs non-sensitive data to custom log files with different log levels.
-- Marco - Integrate, deploy, and use a service instance based on a given requirement.
-- Marco - Given a use case, extend functionality or capture an event using hook extension points.
+- Integrate, deploy, and use a service instance based on a given requirement.
+- Given a use case, extend functionality or capture an event using hook extension points.
 - Given code that violates documented best practices, identify the issues and modify the code to conform with best practices including performance and scalability.
 - Given a business requirement, use OCAPI Shop and Data APIs to enable interoperability with an external system.
 - Given a business requirement to perform a scheduled task, develop jobs and code job scripts.
