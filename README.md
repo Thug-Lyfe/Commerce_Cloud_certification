@@ -19,17 +19,26 @@
   2. Set currency and taxation.
   3. Both can be changed later (and more currencies can be added)
 - Given a recently created B2C site, assign the storefront data configurations according to business requirements. 
-  1. Multi, single locale sites
-  2. Single, multi locale site
-  3. A mix.
-  4. Configurations therein???
+  - Most likely site import/export
 
 ### Work With a B2C Site: 12%
 - Given a Business Manager task, work with the product data model to manage products and product search model, their categorization, and associated inventory and pricebooks.
   1. [Class ProductSearchModel](https://documentation.b2c.commercecloud.salesforce.com/DOC2/topic/com.demandware.dochelp/DWAPI/scriptapi/html/api/class_dw_catalog_ProductSearchModel.html?resultof=%22%70%72%6f%64%75%63%74%22%20%22%73%65%61%72%63%68%22%20%22%6d%6f%64%65%6c%22%20) 
 - Marco - Given a configuration for tasks, such as payment and shipping information, use Business Manager to complete storefront orders.
-  1. Merchant Tools > Ordering > orders > open an order
-  2. Change Confirmation Status > Confirmed.
+  1. open Merchant Tools > Ordering > Customer Service Center
+  2. Create / find orders.
+  3. Add Customer / Shipping address / products etc. and click submit Order (or equivalent)
+  4. add payment method
+  5. complete order?
+  
+  OR
+  
+  1. open Merchant Tools > Ordering > Orders
+  2. set paid status, amount and shipping information.
+  
+  OR
+  
+  1. set order confirmation status to "confirmed".
 - Marco - Given a configuration task, use Business Manager to work with Content Assets, Page Designer, Content Slots, and Content Folders.
   1. Content assets contain meta data and/or html
   2. Content slots contain, Configurations, Content Assets, Meta data and/or html
