@@ -42,11 +42,25 @@
 - Marco - Given a configuration task, use Business Manager to work with Content Assets, Page Designer, Content Slots, and Content Folders.
   1. Content assets contain meta data and/or html
   2. Content slots contain, Configurations, Content Assets, Meta data and/or html
-  3. Page designer, is a custimizable template sites, that can give the customer a visual tool to design web pages.
+  3. Content Folders contain all Content Assets, Pages, Content Slots. They can be shared accross sites.
+  4. Page designer, is a custimizable template sites, that can give the customer a visual tool to design web pages. (it looks and feels a lot like sitecore)
       - The Developer makes the templates and components from business requirements.
+        - a page is made up of regions,
+        - a region is made up of components
+        - components can be banners, carousels, images etc.
+        - Mock values = placeholders
+        - Resolved values are inherited from system objects.
+          ![page designer example](https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/b2c-page-designer-merchandiser/b2c-page-designer-explore/images/3e811dd95253187aeee3c3dcd8e23811_pd-page-region-component.png "page designer example")
       - The Customer creates pages from the templates.
-  4. Content Folders contain all Content Assets, Pages, Content Slots. They can be shared accross sites.
-
+        - Page Settings, General: locale, Searchable, Sitemap.
+        - Page Settings, Localization: Name, description.
+        - Page Settings, Targeting: Start/end Date and specific customer group.
+        - Page Settings, SEO: Page Address, Page Title, Page description, Meta keywords (max 10)
+        - The merchandiser can choose what is in specific components from the default components and the custom made ones.
+        - Locales can be chosen hereditary: fr_CA (French Canadian) > fr (French) > default
+        
+        
+page designer links : [1](https://trailhead.salesforce.com/en/content/learn/modules/b2c-page-designer-merchandiser/b2c-page-designer-explore?trail_id=build-storefront-pages-with-salesforce-b2c-commerce-page-designer) , [2](https://trailhead.salesforce.com/en/content/learn/modules/b2c-page-designer-merchandiser/b2c-page-designer-configure-page?trail_id=build-storefront-pages-with-salesforce-b2c-commerce-page-designer) , [3](https://trailhead.salesforce.com/en/content/learn/modules/b2c-page-designer-merchandiser/b2c-page-designer-configure-component?trail_id=build-storefront-pages-with-salesforce-b2c-commerce-page-designer) , [4](https://trailhead.salesforce.com/en/content/learn/modules/b2c-page-designer-developers/b2c-page-designer-sample-pages-components) , [video showcasing page designer](https://www.salesforce.com/video/3620472/)
 
 ### Data Management Using Business Manager Usage: 24%
 - MARCO - Given a business requirement, modify site search preferences and settings to enable searching for a specified term or product attribute.
