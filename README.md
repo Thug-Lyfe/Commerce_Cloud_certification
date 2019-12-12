@@ -69,7 +69,7 @@ page designer links : [1](https://trailhead.salesforce.com/en/content/learn/modu
 - Given a business requirement, create and configure a new search refinement and sorting definition that can be used on the storefront.
 - Marco - Given a debugging requirement or code, configure the logging categories and access the logs in Business Manager.
   - Administration > Operations > Custom Log Settings
-  - https://some-demandware.net/on/demandware.servlet/webdav/Sites/Impex/customLogs , this is where custom logs will be created.
+  - https://somestore/on/demandware.servlet/webdav/Sites/Impex/customLogs , this is where custom logs will be created.
 - Given business requirements, extend the storefront to expose a new attribute on an existing system object type.
 - Given a business need to store custom data, determine if a custom object is needed and create and configure as required.
 - Given a performance issue and data, use relevant tools to inspect code performance and determine and implement solutions (cache configuration, profilers, etc) to improve performance.
