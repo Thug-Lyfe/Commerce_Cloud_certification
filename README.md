@@ -79,11 +79,43 @@ page designer links : [1](https://trailhead.salesforce.com/en/content/learn/modu
 
 ### Application Development: 53%
 - Marco - Given a development task, code ISML templates that use functionality such as: local include, remote include, components, and other ISML tags.
+  - [ISML tags documentaion] (https://documentation.b2c.commercecloud.salesforce.com/DOC2/index.jsp?topic=%2Fcom.demandware.dochelp%2FISML%2FISML.html)
+  - locale include: \<isinclude template="template_name"/\>
+  - remote include: \<isinclude url="url"/\>
+  - component (only pipeline name is required): \<iscomponent pipeline="pipeline_name" locale="locale_name" someParam="someValue"/\> : retrieves the output of a pipeline
+  - \<iscache\> : for caching a page
+  - \<isif\> \<iselse\> \<iselseif\> : if statement controls
+  - \<isloop\> \<isbreak\> \<iscontinue\> \<isnext\> : loop controls.
+  - \<isslot\> \<iscontentasset\> : content controls
+  - \<isdecorate\> \<isreplace\> : combine templates (isdecorate nominates an area that is filled by isreplace)
+  - \<isset\> \<isremove\>: variables
+  - \<iscookie\> \<isstatus\> : meta data (cookies and http status)
+  - \<isselect\> : select object
+  - \<isredirect\> : redirect to another page
+  - \<isprint\> \<iscomment\> : print to screen, and comments.
 - Marco - Use debugging best practices and techniques to troubleshoot scripts and controllers and verify outcomes.
+  - There is nowhere where "debugging best practices" in trailhead or in the general web, related to commerce cloud
+  - Use pipeline/script debuggers, use breakpoints to get to where the problem arises.
+  - Use Expressions to test hypothesis, without having to rerun every time.
+  - Be liberal with printing lines, be sure to remove them when done.
+  - Useful functions to use in ISML files to get a fast look of what there is to work with:
+    - JSON.stringify(\<someobj\>,null,2) , pretty print JSON
+    - Object.keys(someObj).toString() , list all fields and functions tied to an object (some objects cannot be expressed with JSON)
 - Given a requirement, create and extend the functionality of a JavaScript controller that leverages models, decorators, factories, or helpers following API best practices and renders a template or returns a JSON response.
 - Marco - Given a business requirement and design for a new marketing page, develop page types and components to allow a marketer to build a page with the Page Designer tool.
+  - This explains both well : [page type and component creation](https://trailhead.salesforce.com/content/learn/modules/b2c-page-designer-developers/b2c-page-designer-explore-json-js)
+  ![page designer example](https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/b2c-page-designer-merchandiser/b2c-page-designer-explore/images/3e811dd95253187aeee3c3dcd8e23811_pd-page-region-component.png "page designer example")
+  - Page Type:
+    - Write the config in JSON, naming the different regions (outer green boxes)
+    - Page types can be combined by merchandisers later.
+    - Write a .js that MUST have a .render function, else the page type will not work.
+  - Components
+    - Write the config in JSON, naming the attributes
+    - Write a .js that MUST have a .render function, else the compoent will not work.
 - Given a requirement to accept, validate, and persist information from a storefront customer, modify the appearance of a form, add validation and CSRF protection, and use bindings to process fields.
 - Marco - Given localization requirements, implement and enhance templates, form definitions, static files, properties files, and persistent object attributes to ensure that pages are displayed in the expected language.
+  - Localizing templates, is done by having a default folder, and a locale folder, the templates will be chosen automatically by demandware. [Template localization](https://documentation.b2c.commercecloud.salesforce.com/DOC2/topic/com.demandware.dochelp/Localization/LocalizingUsingMultipleTemplateSets.html)
+  - Localizing Text in with the same base template, is done with resouce (.properties) files. Demandware will also automatically use the locale specific resouce file based on the request locale and naming of the files. [resource localizing](https://documentation.b2c.commercecloud.salesforce.com/DOC2/topic/com.demandware.dochelp/DWAPI/scriptapi/html/api/class_dw_web_Resource.html?resultof=%22%2e%70%72%6f%70%65%72%74%69%65%73%22%20%22%70%72%6f%70%65%72%74%69%22%20)
 - Marco - Given a logging task and existing configuration, write code that logs non-sensitive data to custom log files with different log levels.
 - Integrate, deploy, and use a service instance based on a given requirement.
 - Given a use case, extend functionality or capture an event using hook extension points.
