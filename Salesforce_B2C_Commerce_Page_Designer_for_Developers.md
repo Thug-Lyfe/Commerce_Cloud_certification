@@ -70,7 +70,7 @@
 - Explain what a page type’s render function does.
   - It calls an ISML template, runs all demandware scripts and other scripts therin, to generate a HTML markup, which is then rendered for the user.
 - List four Page Designer CSS development standards.
-  - put the html wrapper in a div (<div id="wrapper"></div>)
+  - put the html wrapper in a div '(<div id="wrapper"></div>)'
   - The default CSS class for regions: "experience-region experience-<region_definition_id>"
   - The dafault CSS Class for components: "experience-component experience-<componenttype_id>"
   - The compoent type ID is with dots (.), the classname is with lines (-).
