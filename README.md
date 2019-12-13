@@ -145,8 +145,9 @@ page designer links : [1](https://trailhead.salesforce.com/en/content/learn/modu
     - The field value can be retrieved in controllers with: $('.\<some_form_name\>').find('input[name$="\<some_input\>"]').val(),
   - CSRF protection
     - When writing forms in isml files use The code snippet below
-    - In controllers use : require('dw/web/CSRFProtection').validateRequest()   , to validate a token
-    - In pipelines use : CSRFProtection.validateRequest()   , to validate a token, always call this as the first thing in a pipeline if CSRFProtection is used.
+    - To validate a token in controllers use : require('dw/web/CSRFProtection').validateRequest()
+    - To validate a token in pipelines use : CSRFProtection.validateRequest()
+      - always call this as the first thing in a pipeline if CSRFProtection is used.
 ```HTML
  <form ... action="">
    <input name="foo" value="bar">
