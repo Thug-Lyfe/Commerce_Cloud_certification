@@ -121,6 +121,16 @@ page designer links : [1](https://trailhead.salesforce.com/en/content/learn/modu
   - Localization of objects (system and custom objects): For all defined locales on Commerce Cloud, system/custom objects can be localized for them. Objects that can be localized is all Subclasses of [PersistentObject](https://documentation.b2c.commercecloud.salesforce.com/DOC2/topic/com.demandware.dochelp/DWAPI/scriptapi/html/api/class_dw_object_PersistentObject.html)
   <br>![example of object localization](https://github.com/Thug-Lyfe/Commerce_Cloud_certification/blob/master/images/object_example.png "example of object localization") <br>
 - Marco - Given a logging task and existing configuration, write code that logs non-sensitive data to custom log files with different log levels.
+  - dw.system.Logger.getLogger('file_prefix','line_prefix')
+    - ex: var myCustomLog : Logger = dw.system.Logger.getLogger('MarcoTest','MarcoTest123')
+    - myCustomLog.error("some error")
+    - custom-MarcoTest-\<some file extention\>-\<Date\>.log
+      - The file above would contain a file like this:
+      - [todays date] ERROR \<location of error\> custom.MarcoTest123 []  some error
+  - Other logging methods
+    - myCustomLog.info("some info")
+    - myCustomLog.debug("some debug")
+    - myCustomLog.warn("some warning")
 - Integrate, deploy, and use a service instance based on a given requirement.
 - Given a use case, extend functionality or capture an event using hook extension points.
 - Given code that violates documented best practices, identify the issues and modify the code to conform with best practices including performance and scalability.
