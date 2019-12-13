@@ -81,10 +81,19 @@ page designer links : [1](https://trailhead.salesforce.com/en/content/learn/modu
   - Administration > Operations > Custom Log Settings
   - https://somestore/on/demandware.servlet/webdav/Sites/Impex/customLogs , this is where custom logs will be created.
 - Given business requirements, extend the storefront to expose a new attribute on an existing system object type.
+  - go to system object types, add a new attribute, add it to a group.
 - Given a business need to store custom data, determine if a custom object is needed and create and configure as required.
+  - if it cannot be added to a system object.
+  - create a custom object to store the data
 - Given a performance issue and data, use relevant tools to inspect code performance and determine and implement solutions (cache configuration, profilers, etc) to improve performance.
-- Given a specification and a sandbox instance, configure OCAPI permissions for Data and Shop APIs.
+  - Pipeline profiler
+  - code profiler
+  - identify bad coding practices (loop over all products if not needed etc.)
+- Given a specification and a sandbox instance, [configure OCAPI permissions](https://documentation.b2c.commercecloud.salesforce.com/DOC1/topic/com.demandware.dochelp/OCAPI/current/usage/OCAPISettings.html) for Data and Shop APIs.
+  - go to administration > site development > Open Commerce API Settings
 - Given a service configuration, recognize how they are applicable to the development process.
+  - wat??
+  - go to services, check the if the settings are correct.
 
 
 ### Application Development: 53%
@@ -177,11 +186,20 @@ page designer links : [1](https://trailhead.salesforce.com/en/content/learn/modu
     - myCustomLog.debug("some debug")
     - myCustomLog.warn("some warning")
 - Integrate, deploy, and use a service instance based on a given requirement.
+  - getSOAPService( '\<some_service\>' );
+  - LocalServiceRegistry.createService(\<some_service\>);
+  - callservice()
 - Given a use case, extend functionality or capture an event using hook extension points.
+  - 
 - Given code that violates documented best practices, identify the issues and modify the code to conform with best practices including performance and scalability.
+  - dont loop all products unless necesarry
+  - get information from current product/form/customer instead of searching for it.
+  - dont loop over attributes, get them directly instead.
 - Given a business requirement, use OCAPI Shop and Data APIs to enable interoperability with an external system.
+  - connect to external server
 - Given a business requirement to perform a scheduled task, develop jobs and code job scripts.
-
+  - create a job (js or pipeline)
+  - enable scheduling.
 
 
 
