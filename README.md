@@ -165,11 +165,13 @@ page designer links : [1](https://trailhead.salesforce.com/en/content/learn/modu
   <br>![example of object localization](https://github.com/Thug-Lyfe/Commerce_Cloud_certification/blob/master/images/object_example.png "example of object localization") <br>
 - Marco - Given a logging task and existing configuration, write code that logs non-sensitive data to custom log files with different log levels.
   - dw.system.Logger.getLogger('file_prefix','line_prefix')
-    - ex: var myCustomLog : Logger = dw.system.Logger.getLogger('MarcoTest','MarcoTest123')
-    - myCustomLog.error("some error")
-    - custom-MarcoTest-\<some file extention\>-\<Date\>.log
-      - The file above would contain a file like this:
-      - [todays date] ERROR \<location of error\> custom.MarcoTest123 []  some error
+    - ex: 
+      - var myCustomLog : Logger = dw.system.Logger.getLogger('MarcoTest','MarcoTest123')
+      - myCustomLog.error("some error")
+      - in the ftp server containing your commerce cloud logs, a new file should be generated:
+        custom-MarcoTest-\<some file extention\>-\<Date\>.log
+        - The file above should contain a line like this:
+        - [todays date] ERROR \<location of error\> custom.MarcoTest123 []  some error
   - Other logging methods
     - myCustomLog.info("some info")
     - myCustomLog.debug("some debug")
