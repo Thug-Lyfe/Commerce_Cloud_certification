@@ -33,3 +33,8 @@
   - Controller : fx adding data to a product feed. Does not require much coding and can be solved with a smaller interaction.
   - Seperate UI : fx content management or analytics, that are not suited to be on the storefront or Business manager, but require a whole new browser setup to work properly.
 - List three potential gaps that you need to consider.
+  - Gaps are areas that could cause errors, complexity, or is client dependant.
+    - Do the tasks require client resources?
+    - Do integrations rely on a certain B2C Commerce release or feature?
+    - Are any of the prerequisites unavailable or delayed?
+    - Are there technical issues?
