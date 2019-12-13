@@ -144,20 +144,18 @@ page designer links : [1](https://trailhead.salesforce.com/en/content/learn/modu
     - The form can be validated in controllers with: $('.\<some_form_name\>')valid()
     - The field value can be retrieved in controllers with: $('.\<some_form_name\>').find('input[name$="\<some_input\>"]').val(),
   - CSRF protection
-    -  When writing forms in isml files use 
+    - When writing forms in isml files use The code snippet below
+    - In controllers use : require('dw/web/CSRFProtection').validateRequest()   , to validate a token
+    - In pipelines use : CSRFProtection.validateRequest()   , to validate a token, always call this as the first thing in a pipeline if CSRFProtection is used.
 ```HTML
  <form ... action="">
    <input name="foo" value="bar">
    <input type=”hidden” name=”${dw.web.CSRFProtection.getTokenName()}” value=”${dw.web.CSRFProtection.generateToken()}”/>
  </form>
 ```
-    - In controllers use : require('dw/web/CSRFProtection').validateRequest()   , to validate a token
-    - In pipelines use : CSRFProtection.validateRequest()   , to validate a token, always call this as the first thing in a pipeline if CSRFProtection is used.
-    
- 
-Then, in scripts call:
- dw.web.CSRFProtection.validateRequest();
+
 - Marco - Given localization requirements, implement and enhance templates, form definitions, static files, properties files, and persistent object attributes to ensure that pages are displayed in the expected language.
+      
   - Localizing templates/forms/static files, is done by having a default folder, and a "locale" folder, the templates will be chosen automatically by demandware.  [Template localization](https://documentation.b2c.commercecloud.salesforce.com/DOC2/topic/com.demandware.dochelp/Localization/LocalizingUsingMultipleTemplateSets.html)
   <br>![example of structure localization](https://github.com/Thug-Lyfe/Commerce_Cloud_certification/blob/master/images/structure_example.png "example of structure localization")<br>
   - Localizing Text in with the same base template, is done with resouce (.properties) files. Demandware will also automatically use the locale specific resouce file based on the request locale and naming of the files. [resource localizing](https://documentation.b2c.commercecloud.salesforce.com/DOC2/topic/com.demandware.dochelp/DWAPI/scriptapi/html/api/class_dw_web_Resource.html?resultof=%22%2e%70%72%6f%70%65%72%74%69%65%73%22%20%22%70%72%6f%70%65%72%74%69%22%20)
