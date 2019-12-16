@@ -79,7 +79,7 @@ page designer links : [1](https://trailhead.salesforce.com/en/content/learn/modu
 - Marco - Given a debugging requirement or code, configure the logging categories and access the logs in Business Manager.
   - Administration > Site Development > Development Setup, here you can find links to logs and other files
   - Administration > Operations > Custom Log Settings
-  - https://somestore/on/demandware.servlet/webdav/Sites/Impex/customLogs , this is where custom logs will be created.
+  - https://somestore/webdav/Sites/Impex/customLogs , this is where custom logs will be created.
 - Given business requirements, extend the storefront to expose a new attribute on an existing system object type.
   - go to system object types, add a new attribute, add it to a group.
 - Given a business need to store custom data, determine if a custom object is needed and create and configure as required.
@@ -98,7 +98,7 @@ page designer links : [1](https://trailhead.salesforce.com/en/content/learn/modu
 
 ### Application Development: 53%
 - Marco - Given a development task, code ISML templates that use functionality such as: local include, remote include, components, and other ISML tags.
-  - [ISML tags documentaion] (https://documentation.b2c.commercecloud.salesforce.com/DOC2/index.jsp?topic=%2Fcom.demandware.dochelp%2FISML%2FISML.html)
+  - [ISML tags documentaion](https://documentation.b2c.commercecloud.salesforce.com/DOC2/index.jsp?topic=%2Fcom.demandware.dochelp%2FISML%2FISML.html)
   - locale include: \<isinclude template="template_name"/\>
   - remote include: \<isinclude url="url"/\>
   - component (only pipeline name is required): \<iscomponent pipeline="pipeline_name" locale="locale_name" someParam="someValue"/\> : retrieves the output of a pipeline
