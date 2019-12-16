@@ -106,7 +106,7 @@ page designer links : [1](https://trailhead.salesforce.com/en/content/learn/modu
   - \<isif\> \<iselse\> \<iselseif\> : if statement controls
   - \<isloop\> \<isbreak\> \<iscontinue\> \<isnext\> : loop controls.
   - \<isslot\> \<iscontentasset\> : content controls
-  - \<isdecorate\> \<isreplace\> : combine templates (isdecorate nominates an area that is filled by isreplace)
+  - \<isdecorate\> \<isreplace\> : combine templates (isreplace nominates an area that is filled by isdecorate)
   - \<isset\> \<isremove\>: variables
   - \<iscookie\> \<isstatus\> : meta data (cookies and http status)
   - \<isselect\> : select object
