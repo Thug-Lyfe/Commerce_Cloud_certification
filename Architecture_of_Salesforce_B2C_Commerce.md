@@ -1,4 +1,4 @@
-# Salesforce B2C Commerce for Developers.
+# Architecture of Salesforce B2C Commerce
 
 [Trailhead ExamGuide](https://trailhead.salesforce.com/help?article=Salesforce-Certified-B2C-Commerce-Developer-Exam-Guide)
 
