@@ -145,13 +145,20 @@ page designer links : [1](https://trailhead.salesforce.com/en/content/learn/modu
   - If applicable use the storefront toolkit.
   - 
 - Given a requirement, create and extend the functionality of a JavaScript controller that leverages models, decorators, factories, or helpers following API best practices and renders a template or returns a JSON response.
-- Models:
-- Decodrators
-- Factories
-- Helpers
-- API best practices
-- Render
-- JSON resonse
+  - Models: Models are util classes, such as ContentModel (app.getModel('Content');)
+    - ContentModel is a util that gives functionality to get data from content assets/slots.
+  - Decodrators : decorators are templates that sorround other templates (header and footer can therefore be static while the content in between can be swapped out)
+  - Factories
+  - Helpers: meta classes
+    - [CatalogMgr](https://documentation.b2c.commercecloud.salesforce.com/DOC4/index.jsp?topic=%2Fcom.demandware.dochelp%2FDWAPI%2Fscriptapi%2Fhtml%2Fapi%2Fclass_dw_catalog_CatalogMgr.html&resultof=%22%2a%6d%67%72%22%20): Contains helper functions that are catalog related
+    - [ProductMgr](https://documentation.b2c.commercecloud.salesforce.com/DOC4/index.jsp?topic=%2Fcom.demandware.dochelp%2FDWAPI%2Fscriptapi%2Fhtml%2Fapi%2Fclass_dw_catalog_ProductMgr.html&resultof=%22%2a%6d%67%72%22%20): Contains helper functions that are catalog related
+    - [etc.](https://documentation.b2c.commercecloud.salesforce.com/DOC4/index.jsp?searchWord=*mgr): other helper classes can be found here. (click 'GO')
+  - API best practices
+    - 
+  - Render: render a template for the user
+    - app.getView(\<optional_decorator\>,\<optional_parameters\>).render(\<some_template\>
+  - JSON resonse
+    - send a JSON object with require('*/cartridge/scripts/util/Response').renderJSON({key:'value'});
 
 - Marco - Given a business requirement and design for a new marketing page, develop page types and components to allow a marketer to build a page with the Page Designer tool. [incorporating a page designer page in storefront](https://documentation.b2c.commercecloud.salesforce.com/DOC2/index.jsp?topic=%2Fcom.demandware.dochelp%2FPageDesigner%2FMakePDPageAvailable.html), [page types and components as content assets](https://documentation.b2c.commercecloud.salesforce.com/DOC2/index.jsp?topic=%2Fcom.demandware.dochelp%2FPageDesigner%2FPgCompTypesContentAssets.html), [using decorators with page designer](https://documentation.b2c.commercecloud.salesforce.com/DOC2/index.jsp?topic=%2Fcom.demandware.dochelp%2FPageDesigner%2FDecoratorsForPD.html).
   - This explains both well : [page type and component creation](https://trailhead.salesforce.com/content/learn/modules/b2c-page-designer-developers/b2c-page-designer-explore-json-js)
