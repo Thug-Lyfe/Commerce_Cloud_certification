@@ -85,7 +85,12 @@
 ## Create a Custom Attribute Editor
 
 - Explain why you would create a custom attribute editor.
-  - 
+  - If a custom attribute cannot be expressed in default editors, for example a color wheel.
 - Explain how the HTML iframe works with a custom attribute editor.
+  - The structure goes as follows: page type > Iframe > component > Iframe > Custom Atrributes.
+  - Every custom attribute is within an Iframe so it cannot interfere with other attributes.
 - Explain the difference between a breakout custom attribute editor and a trigger custom attribute editor.
+  - A breakout Custom attribute, is a attribute which cannot be contained in the normal editor window, instead it will pop out into an editor created specifically for this attribute.
+  - A trigger custom attribute, is a field that will be in the editor window with the rest of the attributes, and when chosen/activated, it will trigger a "breakout custom attribute".
 - Explain why you would use a breakout custom attribute editor.
+  - If an attribute cannot be expressed with dafault editors and it cannot be represented in the normal fassion, such as a color wheel.
