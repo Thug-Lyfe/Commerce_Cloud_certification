@@ -156,13 +156,15 @@ page designer links : [1](https://trailhead.salesforce.com/en/content/learn/modu
 - Marco - Given a business requirement and design for a new marketing page, develop page types and components to allow a marketer to build a page with the Page Designer tool. [incorporating a page designer page in storefront](https://documentation.b2c.commercecloud.salesforce.com/DOC2/index.jsp?topic=%2Fcom.demandware.dochelp%2FPageDesigner%2FMakePDPageAvailable.html), [page types and components as content assets](https://documentation.b2c.commercecloud.salesforce.com/DOC2/index.jsp?topic=%2Fcom.demandware.dochelp%2FPageDesigner%2FPgCompTypesContentAssets.html), [using decorators with page designer](https://documentation.b2c.commercecloud.salesforce.com/DOC2/index.jsp?topic=%2Fcom.demandware.dochelp%2FPageDesigner%2FDecoratorsForPD.html).
   - This explains both well : [page type and component creation](https://trailhead.salesforce.com/content/learn/modules/b2c-page-designer-developers/b2c-page-designer-explore-json-js)
   ![page designer example](https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/b2c-page-designer-merchandiser/b2c-page-designer-explore/images/3e811dd95253187aeee3c3dcd8e23811_pd-page-region-component.png "page designer example")
-  - Page Type:
+  - The look and feel of the Page Designer tool, is essentially ContentForge, we just made ContentForge before salesforce made Page Designer
+  - Page Type: The marketer can choose a page type, or multiple page types for their pages, Every page type has nominated areas for components, where the merchandiser can fill in components.
     - Write the config in JSON, naming the different regions (outer green boxes)
     - Page types can be combined by merchandisers later.
     - Write a .js that MUST have a .render function, else the page type will not work.
-  - Components
+  - Components: There are some default components to choose from, but custom ones can be made, and are small isml pages, made from business requirements. The marketer can then choose themselves which ones, they want in their page types.
     - Write the config in JSON, naming the attributes
     - Write a .js that MUST have a .render function, else the compoent will not work.
+
 - Marco - Given a requirement to accept, validate, and persist information from a storefront customer, modify the appearance of a form, add validation and [CSRF protection](https://documentation.b2c.commercecloud.salesforce.com/DOC2/topic/com.demandware.dochelp/DWAPI/scriptapi/html/api/class_dw_web_CSRFProtection.html?resultof=%22%43%53%52%46%22%20%22%63%73%72%66%22%20), and use bindings to process fields.
   - Accept/validate: Forms are created as xml files and must be placed in cartridge/forms/\<default or locale\>/\<form_name\>.xml
     - There are 2 ways of validating the form
@@ -181,6 +183,10 @@ page designer links : [1](https://trailhead.salesforce.com/en/content/learn/modu
     - To validate a token in controllers use : require('dw/web/CSRFProtection').validateRequest()
     - To validate a token in pipelines use : CSRFProtection.validateRequest()
       - always call this as the first thing in a pipeline if CSRFProtection is used.
+  - Verification is a mix of jquery and server checks.
+    - Jquery will be live and client side. (see app.js Validatephone / validatePostal for examples)
+    - \<action formid="save" valid-form="true"/\> in \<some_form\>.xml will make server verification active and will happen automatically.
+
 ```HTML
  <form ... action="">
    <input name="foo" value="bar">
@@ -214,7 +220,15 @@ page designer links : [1](https://trailhead.salesforce.com/en/content/learn/modu
   - LocalServiceRegistry.createService(\<some_service\>);
   - callservice()
 - Given a use case, extend functionality or capture an event using hook extension points.
-  - 
+  - Hook extension points: extend functionality with scripts.
+  - [OCAPI Hooks](https://documentation.b2c.commercecloud.salesforce.com/DOC4/index.jsp?topic=%2Fcom.demandware.dochelp%2FOCAPI%2Fcurrent%2Fusage%2FHooks.html&resultof=%22%48%6f%6f%6b%22%20%22%68%6f%6f%6b%22%20%22%65%78%74%65%6e%73%69%6f%6e%22%20%22%65%78%74%65%6e%73%22%20%22%70%6f%69%6e%74%73%22%20%22%70%6f%69%6e%74%22%20): Nominate a script to be run before, after creation. Modify response or onValidate.
+    - dw.ocapi.shop.basket.beforePOST
+    - dw.ocapi.shop.basket.afterPOST
+    - dw.ocapi.shop.basket.modifyPOSTResponse
+    - dw.ocapi.shop.basket.validateBasket
+  - [SFRA Hooks](https://documentation.b2c.commercecloud.salesforce.com/DOC4/index.jsp?topic=%2Fcom.demandware.dochelp%2FSFRA%2FSFRAHooks.html&resultof=%22%48%6f%6f%6b%22%20%22%68%6f%6f%6b%22%20%22%65%78%74%65%6e%73%69%6f%6e%22%20%22%65%78%74%65%6e%73%22%20%22%70%6f%69%6e%74%73%22%20%22%70%6f%69%6e%74%22%20): Creating custom scripts called with the hook name.
+  - [BM Extension Hooks](https://documentation.b2c.commercecloud.salesforce.com/DOC4/index.jsp?topic=%2Fcom.demandware.dochelp%2FSiteDevelopment%2FBusinessManagerExtensionPoints.html&resultof=%22%48%6f%6f%6b%22%20%22%68%6f%6f%6b%22%20%22%65%78%74%65%6e%73%69%6f%6e%22%20%22%65%78%74%65%6e%73%22%20%22%70%6f%69%6e%74%73%22%20%22%70%6f%69%6e%74%22%20): 
+
 - Given code that violates documented best practices, identify the issues and modify the code to conform with best practices including performance and scalability.
   - dont loop all products unless necesarry
   - get information from current product/form/customer instead of searching for it.
