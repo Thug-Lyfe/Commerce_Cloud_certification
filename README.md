@@ -79,7 +79,23 @@ page designer links : [1](https://trailhead.salesforce.com/en/content/learn/modu
 - Marco - Given a debugging requirement or code, configure the logging categories and access the logs in Business Manager.
   - Administration > Site Development > Development Setup, here you can find links to logs and other files
   - Administration > Operations > Custom Log Settings
-  - https://somestore/webdav/Sites/Impex/customLogs , this is where custom logs will be created.
+  - https://somestore/webdav/Sites/Impex/customLogs or .../Sites/logs, this is where custom logs will be created.
+  
+  - Custom log setting notes: 
+    - Logs to ../Sites/Logs, follow BM custom log settings
+    - Logs to ../Sites/Impex/* does not follow BM custom log settings
+    - Dw.system.Logger.getLogger(prefix,category), will all be in “prefix” file.
+      - Storefront logs will be in https://somestore/webdav/Sites/Logs
+      - New jobs will be logged in https://somestore/webdav/Sites/Logs
+      - New jobs will be logged in job log https://somestore/webdav/Sites/Impex/Logs
+      - Old Jobs will be logged in https://somestore/webdav/Sites/Logs
+    - Dw.system.Logger.getLogger(category), will all be in “customdebug”, “custominfo”, “customwarn”, “customerror” files.
+      - Storefront logs will be in https://somestore/webdav/Sites/Logs
+      - New jobs will be logged in https://somestore/webdav/Sites/Logs
+      - New jobs will be logged in job log https://somestore/webdav/Sites/Impex/Logs
+      - Old Jobs will be logged in https://somestore/webdav/Sites/Logs
+
+  
 - Given business requirements, extend the storefront to expose a new attribute on an existing system object type.
   - go to system object types, add a new attribute, add it to a group.
 - Given a business need to store custom data, determine if a custom object is needed and create and configure as required.
@@ -124,12 +140,20 @@ page designer links : [1](https://trailhead.salesforce.com/en/content/learn/modu
   - Be liberal with printing lines / console logs and other status messages, be sure to remove them when done.
   - Useful functions to use in ISML files to get a fast look of what there is to work with:
     - JSON.stringify(\<someobj\>,null,2) , pretty print JSON
-    - Object.keys(someObj).toString() , list all fields and functions tied to an object (some objects cannot be expressed with JSON)
+    - Object.keys(someObj).toString() , list all fields and functions tied to an object (Demandware data structeres that inherit from object cannot be expressed as JSON.)
   - Always have meaningful error logging, this makes finding and identifying error and solutions faster and easier.
   - If applicable use the storefront toolkit.
   - 
 - Given a requirement, create and extend the functionality of a JavaScript controller that leverages models, decorators, factories, or helpers following API best practices and renders a template or returns a JSON response.
-- Marco - Given a business requirement and design for a new marketing page, develop page types and components to allow a marketer to build a page with the Page Designer tool.
+- Models:
+- Decodrators
+- Factories
+- Helpers
+- API best practices
+- Render
+- JSON resonse
+
+- Marco - Given a business requirement and design for a new marketing page, develop page types and components to allow a marketer to build a page with the Page Designer tool. [incorporating a page designer page in storefront](https://documentation.b2c.commercecloud.salesforce.com/DOC2/index.jsp?topic=%2Fcom.demandware.dochelp%2FPageDesigner%2FMakePDPageAvailable.html), [page types and components as content assets](https://documentation.b2c.commercecloud.salesforce.com/DOC2/index.jsp?topic=%2Fcom.demandware.dochelp%2FPageDesigner%2FPgCompTypesContentAssets.html), [using decorators with page designer](https://documentation.b2c.commercecloud.salesforce.com/DOC2/index.jsp?topic=%2Fcom.demandware.dochelp%2FPageDesigner%2FDecoratorsForPD.html).
   - This explains both well : [page type and component creation](https://trailhead.salesforce.com/content/learn/modules/b2c-page-designer-developers/b2c-page-designer-explore-json-js)
   ![page designer example](https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/b2c-page-designer-merchandiser/b2c-page-designer-explore/images/3e811dd95253187aeee3c3dcd8e23811_pd-page-region-component.png "page designer example")
   - Page Type:
