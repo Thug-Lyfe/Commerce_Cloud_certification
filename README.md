@@ -1,4 +1,4 @@
-# Commerce_Cloud_certification
+ap# Commerce_Cloud_certification
 
 [Trailhead ExamGuide](https://trailhead.salesforce.com/help?article=Salesforce-Certified-B2C-Commerce-Developer-Exam-Guide) 
 
@@ -154,7 +154,7 @@ page designer links : [1](https://trailhead.salesforce.com/en/content/learn/modu
     - [ProductMgr](https://documentation.b2c.commercecloud.salesforce.com/DOC4/index.jsp?topic=%2Fcom.demandware.dochelp%2FDWAPI%2Fscriptapi%2Fhtml%2Fapi%2Fclass_dw_catalog_ProductMgr.html&resultof=%22%2a%6d%67%72%22%20): Contains helper functions that are catalog related
     - [etc.](https://documentation.b2c.commercecloud.salesforce.com/DOC4/index.jsp?searchWord=*mgr): other helper classes can be found here. (click 'GO')
   - API best practices
-    - 
+    - asd
   - Render: render a template for the user
     - app.getView(\<optional_decorator\>,\<optional_parameters\>).render(\<some_template\>
   - JSON resonse
